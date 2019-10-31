@@ -1,0 +1,430 @@
+﻿/*--------------------------------------
+    Global Helpers
+----------------------------------------*/
+
+/*section:not(:first-child){
+    margin-top:80px;
+}*/
+
+.container > h2 {
+    padding: 60px 0 40px 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+}
+
+.waves-effect.waves-blue .waves-ripple {
+     /* The alpha value allows the text and background color
+     of the button to still show through. */
+      background-color: rgba(25, 118, 210, 0.80);
+    }
+
+
+/*--------------------------------------
+    Intro
+----------------------------------------*/
+
+#intro {
+    background: url(../images/intro.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+}
+
+    #intro:before {
+        content: "";
+        background-color: rgba(26, 30, 35, 0.75);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+.intro-text-container {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+}
+
+    .intro-text-container h4 {
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .intro-text-container h1 {
+        font-weight: 600;
+    }
+
+.social-icons li {
+    display: inline-block;
+    padding: 4px;
+}
+
+.social-icons a i {
+    font-size: 2rem;
+}
+
+/* Mouse icon in Intro area */
+.mouse-icon {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.87);
+    border-radius: 16px;
+    height: 50px;
+    width: 30px;
+    margin-left: -17px;
+    display: block;
+    z-index: 10;
+}
+
+    .mouse-icon .mouse-wheel {
+        position: relative;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.87);
+        width: 4px;
+        height: 10px;
+        top: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        -moz-animation-duration: 1s;
+        -o-animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+    }
+
+/*--------------------------------------
+    Typed JS Cursor blink animation
+----------------------------------------*/
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*--------------------------------------
+    Navigation
+----------------------------------------*/
+
+nav{
+    z-index:1000;
+}
+
+nav li.current a{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*--------------------------------------
+    About Me
+----------------------------------------*/
+
+#about-me img.circle {
+    margin-top: -150px;
+}
+
+#about-me .card-panel {
+    margin-top: 160px;
+}
+
+    #about-me .card-panel ul > li {
+        width: 50%;
+        float: left;
+    }
+
+.card-panel h4 {
+    text-transform: uppercase;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/*--------------------------------------
+    Skills
+----------------------------------------*/
+
+.skills-panel {
+    margin: 10px 40px;
+}
+
+    .skills-panel .progress {
+        margin-bottom: 40px;
+    }
+
+    .skills-panel p {
+        font-size: 1.1rem;
+    }
+
+#skills .chip {
+    font-size: 1.1rem;
+    margin: 10px;
+}
+
+/*--------------------------------------
+    Work Experience (Timeline)
+----------------------------------------*/
+
+.timeline, .timeline li {
+    position: relative;
+}
+
+    .timeline .timeline-icon {
+        position: absolute;
+        top: 28px;
+        left: 50%;
+        margin-left: -6px;
+        font-size: 0.8rem;
+        height: 14px;
+        width: 14px;
+        background-color: #1976D2;
+        border-radius: 50%;
+        /*background-color: #424242;*/
+        z-index: 50;
+    }
+
+    .timeline ul:before {
+        content: '';
+        position: absolute;
+        background-color: #424242;
+        height: 100%;
+        width: 2px;
+        left: 50%;
+        z-index: 0;
+    }
+
+.row div.timeline-content {
+    padding: 20px;
+    background-color: #424242;
+    position: relative;
+    z-index: 100;
+}
+
+.timeline-content p {
+    padding-top: 10px;
+    font-size: 0.9rem;
+}
+
+.timeline-content .divider {
+    opacity: 0.4;
+}
+
+@media (min-width: 600px) {
+    .timeline ul li:nth-child(odd) div.timeline-content {
+        text-align: right;
+    }
+
+        .timeline ul li:nth-child(odd) div.timeline-content:before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: 100%;
+            border-top: 16px solid transparent;
+            border-bottom: 16px solid transparent;
+            border-left: 20px solid #424242;
+        }
+
+    .timeline ul li:nth-child(even) div.timeline-content {
+        float: right;
+    }
+
+        .timeline ul li:nth-child(even) div.timeline-content:before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: -20px;
+            ;
+            border-top: 16px solid transparent;
+            border-bottom: 16px solid transparent;
+            border-right: 20px solid #424242;
+        }
+}
+
+/*--------------------------------------
+    Projects
+----------------------------------------*/
+
+#projects-filter {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+    #projects-filter ul {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+        #projects-filter ul li {
+            display: inline;
+            cursor: pointer;
+            margin: 10px;
+            padding-bottom: 6px;
+        }
+
+            #projects-filter ul li:hover {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.87);
+            }
+
+#projects-container .mix {
+    display: none;
+    margin: 0;
+}
+
+/*#projects-container .card-image {
+    position: relative;
+}
+
+    #projects-container .card-image .project-info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 25% 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        background-color: rgba(25, 118, 210, 0.80);
+        text-align: center;
+        font-size: 15px;
+        opacity: 0;
+        -webkit-transition: all 300ms ease-in-out;
+        -moz-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
+    }
+
+    #projects-container .card-image:hover .project-info,
+    #projects-container .card-image:focus .project-info {
+        opacity: 1;
+    }
+
+    #projects-container .card-image img {
+        width: 100%;
+        height: auto;
+        -moz-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+        -webkit-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
+    }
+
+    #projects-container .card-image:hover img,
+    #projects-container .card-image:focus img {
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+.project-hover-content {
+    position:absolute;    
+    top:10%;
+    -moz-transform: translate(0px, 20px); translate(0px, 2px);
+    -ms-transform: translate(0px, 20px); translate(0px, 20px); translate(0px, 2px); translate(0px, 5px); translate(0px, 5px); translate(0px, 5px);
+    -o-transform: translate(0px, 20px); translate(0px, 20px); translate(0px, 2px); translate(0px, 5px);
+    -webkit-transform: translate(0px, 20px); translate(0px, 2px);
+    transform: translate(0px, 20px);
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+
+.card-image:hover .project-hover-content,
+.card-image:focus .project-hover-content {
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}*/
+
+
+/*--------------------------------------
+    Certifications
+----------------------------------------*/
+
+#certs .carousel-item{
+    color:rgba(255, 255, 255, 0.87);
+    text-align:center;
+    width:250px;
+    height:250px;
+    background-color: #424242;
+    padding: 30px 10px;
+}
+
+#certs .carousel-item:hover{    
+    background-color: rgba(25, 118, 210, 1);
+}
+
+.carousel-item .divider {
+    opacity: 0.4;
+}
+
+
+/*--------------------------------------
+    Footer
+----------------------------------------*/
+
+footer.page-footer {
+    margin-top: 100px;
+}
+
+/*--------------------------------------
+    Responsive overrides for Small Screens
+----------------------------------------*/
+@media (max-width : 766px) {
+    #about-me .card-panel ul > li {
+        width: 100%;
+    }
+}
