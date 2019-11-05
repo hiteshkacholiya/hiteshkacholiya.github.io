@@ -31,18 +31,17 @@ $(function () {
 
     //Typing skill Hashtags - using Typed.js
     (function () {
-        var passions = ["#coder", "#programmer", "#designer", "#engineer", "#geek", "#technophile", "#gamer"];
+        var keySkills = ["Design","Architect", "Code", "Innovate", "Engineer", "Automate" ];
 
         $(".typing-area").typed({
-            strings: passions,
+            strings: keySkills,
             typeSpeed: 50,
             backSpeed: 10,
             backDelay: 2000,
-            loop:true
+            loop:true,
         });
     }());
 
-    
     //----------------------------------------
     // Page Navigation
     //----------------------------------------
@@ -50,6 +49,10 @@ $(function () {
     //Make NAV bar stick to top of the browser
     (function () {
         $("nav").sticky({ topSpacing: 0 });
+    }());
+
+    (function () {
+        $("bar").sticky({ topSpacing: 0 });
     }());
 
     //Init single page nav (smooth scrolling)

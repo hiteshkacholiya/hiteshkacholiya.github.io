@@ -6,6 +6,7 @@
     margin-top:80px;
 }*/
 
+
 .container > h2 {
     padding: 60px 0 40px 0;
     text-transform: uppercase;
@@ -25,7 +26,7 @@
 ----------------------------------------*/
 
 #intro {
-    background: url(../images/intro.jpg) no-repeat center center;
+    background:white; /*url(../images/intro.jpg) no-repeat center center;*/
     background-attachment: fixed;
     background-size: cover;
     position: relative;
@@ -34,7 +35,7 @@
 
     #intro:before {
         content: "";
-        background-color: rgba(26, 30, 35, 0.75);
+        background-color: rgba(51, 122, 183, 1);
         position: absolute;
         top: 0;
         left: 0;
@@ -45,18 +46,22 @@
 .intro-text-container {
     position: absolute;
     top: 50%;
-    width: 100%;
+    left: 50%;
     text-align: center;
-    -moz-transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%);
-    -o-transform: translate(0%, -50%);
-    -webkit-transform: translate(0%, -50%);
-    transform: translate(0%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: #337ab7;
+    line-height: 1.4285;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
     .intro-text-container h4 {
-        font-weight: 600;
+        color:#fff;
+        font-weight: 900;
         text-transform: uppercase;
+        letter-spacing:0.05em;
+        line-height: 0.9em;
+        margin:0;
     }
 
     .intro-text-container h1 {
@@ -70,6 +75,19 @@
 
 .social-icons a i {
     font-size: 2rem;
+}
+
+.btn-rounded-white {
+    display: inline-block;
+    color: #fff;
+    padding: 15px 25px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+}
+
+.btn-rounded-white:hover {
+    background-color: #024e9b;
+    text-decoration:none
 }
 
 /* Mouse icon in Intro area */
@@ -86,20 +104,80 @@
     z-index: 10;
 }
 
-    .mouse-icon .mouse-wheel {
-        position: relative;
-        border-radius: 10px;
-        background: rgba(255, 255, 255, 0.87);
-        width: 4px;
-        height: 10px;
-        top: 8px;
-        margin-left: auto;
-        margin-right: auto;
-        -moz-animation-duration: 1s;
-        -o-animation-duration: 1s;
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
+.mouse-icon .mouse-wheel {
+    position: relative;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.87);
+    width: 4px;
+    height: 10px;
+    top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
     }
+    
+    .progress-bar {
+    height: 8px;
+    background: #3498db;
+    width: 0%;
+    }
+
+    /* Scroll Right */
+    .scroll-right {
+    height: 50px;	
+    overflow: hidden;
+    position: relative;
+    background: white;
+    color: rgba(51, 122, 183, 1);;
+    border: 1px solid rgba(51, 122, 183, 1);;
+    }
+    .scroll-right p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(-100%);
+    -webkit-transform:translateX(-100%);	
+    transform:translateX(-100%);
+    /* Apply animation to this element */	
+    -moz-animation: scroll-right 15s linear infinite;
+    -webkit-animation: scroll-right 15s linear infinite;
+    animation: scroll-right 15s linear infinite;
+    }
+    /* Move it (define the animation) */
+    @-moz-keyframes scroll-right {
+    0%   { -moz-transform: translateX(-100%); }
+    100% { -moz-transform: translateX(100%); }
+    }
+    @-webkit-keyframes scroll-right {
+    0%   { -webkit-transform: translateX(-100%); }
+    100% { -webkit-transform: translateX(100%); }
+    }
+    @keyframes scroll-right {
+    0%   { 
+    -moz-transform: translateX(-100%); /* Browser bug fix */
+    -webkit-transform: translateX(-100%); /* Browser bug fix */
+    transform: translateX(-100%); 		
+    }
+    100% { 
+    -moz-transform: translateX(100%); /* Browser bug fix */
+    -webkit-transform: translateX(100%); /* Browser bug fix */
+    transform: translateX(100%); 
+    }
+    }
+
 
 /*--------------------------------------
     Typed JS Cursor blink animation
