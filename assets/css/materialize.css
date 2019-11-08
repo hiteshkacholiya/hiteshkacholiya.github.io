@@ -2061,6 +2061,13 @@ ul {
   overflow: hidden;
   background-color: #e0e0e0; }
 
+.divider-project {
+  height: 1px;
+  overflow: hidden;
+  background-color: #ffffff; 
+  align-self: center;
+}
+
 blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
@@ -5801,9 +5808,13 @@ small {
       bottom: 0;
       left: 0;
       padding: 20px; }
-  .card .card-content {
-    padding: 20px;
-    border-radius: 0 0 2px 2px; }
+  .card .card-content 
+    {
+      padding: 20px;
+      border-radius: 0 0 2px 0px;
+      background-color:  rgba(51, 122, 183, 1);
+      box-shadow: 0 8px 17px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    }
     .card .card-content p {
       margin: 0;
       color: inherit; }
