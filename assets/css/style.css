@@ -242,7 +242,7 @@ nav{
 }
 
 nav li.current a{
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color:rgba(176, 207, 237, 1);
 }
 
 /*--------------------------------------
@@ -298,23 +298,24 @@ nav li.current a{
 }
 
     .timeline .timeline-icon {
-        position: absolute;
-        top: 28px;
-        left: 50%;
+        position: relative;
+        color: #ffffff;
+        left: 48%;
         margin-left: -6px;
-        font-size: 0.8rem;
-        height: 14px;
-        width: 14px;
+        height: 55px;
+        width: 55px;
         background-color: #1976D2;
+        background:#1976D2;
         border-radius: 50%;
-        /*background-color: #424242;*/
-        z-index: 50;
+        z-index: 99;
+        /*background-color: #424242;
+        z-index: 50;*/
     }
 
     .timeline ul:before {
         content: '';
         position: absolute;
-        background-color: #424242;
+        background-color: #ffffff;
         height: 100%;
         width: 2px;
         left: 50%;
@@ -323,7 +324,7 @@ nav li.current a{
 
 .row div.timeline-content {
     padding: 20px;
-    background-color: #424242;
+    background-color:rgba(51, 122, 183, 1);
     position: relative;
     z-index: 100;
 }
@@ -349,7 +350,7 @@ nav li.current a{
             left: 100%;
             border-top: 16px solid transparent;
             border-bottom: 16px solid transparent;
-            border-left: 20px solid #424242;
+            border-left: 20px solid #ffffff;
         }
 
     .timeline ul li:nth-child(even) div.timeline-content {
@@ -364,8 +365,41 @@ nav li.current a{
             ;
             border-top: 16px solid transparent;
             border-bottom: 16px solid transparent;
-            border-right: 20px solid #424242;
+            border-right: 20px solid #ffffff;
         }
+}
+
+.timeline span {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    bottom: 0;
+    left: 47px;
+    line-height: 38px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 0;
+    
+    /* CSS3 Transition: */
+	-webkit-transition: 0.50s;
+	/* Future proofing (these do not work yet): */
+	-moz-transition: 0.50s;
+    transition: 0.50s;  
+}
+.timeline h3:hover span
+{ 
+    width:auto; 
+    padding:0 30px;
+    overflow:visible;
+    text-decoration:none; 
+}
+
+.timeline h3 span{
+	color:#ffffff;
 }
 
 /*--------------------------------------
