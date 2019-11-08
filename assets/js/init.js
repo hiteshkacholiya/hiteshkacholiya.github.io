@@ -112,19 +112,11 @@ $(function () {
                     [
                         {
                             text: "Azure",
-                            count: 65
-                        },
-                        {
-                            text: "SharePoint",
-                            count: 60
+                            count: 100
                         },
                         {
                             text: "C#",
-                            count: 55
-                        },
-                        {
-                            text: ".Net",
-                            count: 55
+                            count: 80
                         },
                         {
                             text: "PowerShell",
@@ -139,6 +131,10 @@ $(function () {
                             count: 40
                         },
                         {
+                            text: ".Net",
+                            count: 55
+                        },
+                        {
                             text: "JavaScript",
                             count: 40
                         },
@@ -147,8 +143,12 @@ $(function () {
                             count: 45
                         },
                         {
+                            text: "SharePoint",
+                            count: 90
+                        },
+                        {
                             text: "Office 365",
-                            count: 44
+                            count: 64
                         },
                         {
                             text: "Cloud Migration",
@@ -192,11 +192,11 @@ $(function () {
                         },
                         {
                             text: "ARM Templates",
-                            count: 40
+                            count: 45
                         },
                         {
                             text: "Automation Accounts",
-                            count: 35
+                            count: 45
                         },
                         {
                             text: "Runbooks",
@@ -204,7 +204,7 @@ $(function () {
                         },
                         {
                             text: "Bot Framework",
-                            count: 36
+                            count: 70
                         },
                         {
                             text: "QnA Maker",
@@ -216,23 +216,23 @@ $(function () {
                         },
                         {
                             text: "Vision API",
-                            count: 34
+                            count: 44
                         },
                         {
                             text: "Azure Function",
-                            count: 33
+                            count: 53
                         },
                         {
                             text: "App Services",
-                            count: 33
+                            count: 63
                         },
                         {
                             text: "Logic Apps",
-                            count: 33
+                            count: 53
                         },
                         {
                             text: "Application Insights",
-                            count: 30
+                            count: 40
                         },
                         {
                             text: "Log Analytics",
@@ -252,19 +252,19 @@ $(function () {
                         },
                         {
                             text: "Virtual Machines",
-                            count: 31
+                            count: 51
                         },
                         {
                             text: "Azure AD",
-                            count: 31
+                            count: 51
                         },
                         {
                             text: "Cost Management",
-                            count: 29
+                            count: 49
                         },
                         {
                             text: "HTML",
-                            count: 28
+                            count: 38
                         },
                         {
                             text: "CSS",
@@ -284,7 +284,7 @@ $(function () {
                         },
                         {
                             text: "PowerShell ISE",
-                            count: 30
+                            count: 70
                         },
                         {
                             text: "SSMS",
@@ -292,7 +292,7 @@ $(function () {
                         },
                         {
                             text: "Visual Studio Code",
-                            count: 40
+                            count: 60
                         }
                         
                     ],
@@ -306,6 +306,7 @@ $(function () {
                 style: {
                     //backgroundColor: '#024e9b',
                     fontFamily: 'create round',
+                    padding: '2px 3px',
                     hoverState: {
                         backgroundColor: '#337ab7',
                         borderRadius: 1,
