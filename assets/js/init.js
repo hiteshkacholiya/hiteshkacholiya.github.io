@@ -31,14 +31,14 @@ $(function () {
 
     //Typing skill Hashtags - using Typed.js
     (function () {
-        var keySkills = ["Design","Architect", "Code", "Innovate", "Engineer", "Automate" ];
+        var keySkills = ["Design", "Architect", "Code", "Innovate", "Engineer", "Automate"];
 
         $(".typing-area").typed({
             strings: keySkills,
             typeSpeed: 50,
             backSpeed: 10,
             backDelay: 2000,
-            loop:true,
+            loop: true,
         });
     }());
 
@@ -101,7 +101,7 @@ $(function () {
     //Init carousel for certifications
     (function () {
         $('.carousel').carousel();
-    }());    
+    }());
 
     //Skill Cloud
     (function () {
@@ -293,8 +293,11 @@ $(function () {
                         {
                             text: "Visual Studio Code",
                             count: 60
+                        },
+                        {
+                            text: "Google Cloud",
+                            count: 25
                         }
-                        
                     ],
                 minLength: 5,
                 ignore: [],
