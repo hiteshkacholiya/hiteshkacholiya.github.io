@@ -1,65 +1,73 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background: white;">
+
 <head>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8">
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="/assets/css/fontawesome-all.css" rel="stylesheet">
+
+    <!-- Stylesheet Refs -->
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <link href="assets/css/materialize.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+
+    <!-- Word Cloud Refs-->
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+
     <title>Hitesh Kacholiya's Portfolio Website</title>
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="z-depth-1-half">
-        <div class="nav-wrapper container">
-            <a href="#!" class="brand-logo light-blue-text">Hitesh Kacholiya</a>
-            <a href="#!" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down" id="desktop-nav">
-                <li><a href="#intro">Home</a></li>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#work-exp">Work Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#certs">Certifications</a></li>
-            </ul>
-            <ul class="side-nav" id="mobile-nav">
-                <li><a href="#intro">Home</a></li>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#work-exp">Work Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#certs">Certifications</a></li>
-            </ul>
-        </div>
-    </nav>
+
+<body style="background-color: white; width: 99%; margin: 0 auto; ">
     <!-- Introduction Banner -->
     <section id="intro" class="intro-banner" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="50">
         <div class="intro-text-container">
-            <h4 class="light-blue-text text-darken-1">Hitesh Kacholiya</h4>
+            <!-- <div style="text-align: left;">
+                    <p> <h3><span>&#9733;</span>Total IT Experience: <span style="color:3498db">&#9322;</span> </h3></p>
+            </div> -->
+            <h4 class="white-text text-darken-1" style="text-align: center ;">Hitesh <br /> Kacholiya</h4>
+            <h2 class="gray-text text-darken-1">Software Engineer</h2>
             <h1>
                 <span class="typing-area"></span>
             </h1>
-            <p></p>
-            <p></p>
-            <p></p>
+            <a href="https://drive.google.com/file/d/1PrThfbWxskbjuEvmFI3nZk9PT_-hzu_P/view?usp=sharing" target="_blank"
+                class="btn-rounded-white">Download Resume</a>
 
             <ul class="social-icons">
                 <li>
-                    <a href="" class="btn btn-floating btn-large btn-flat tooltipped" target="_blank" data-tooltip="LinkedIn">
+                    <a href="https://www.linkedin.com/in/hitesh-kacholiya"
+                        class="btn btn-floating btn-large btn-flat tooltipped" target="_blank" data-tooltip="LinkedIn">
                         <i class="fa fa-linkedin"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="" class="btn btn-floating btn-large btn-flat tooltipped" target="_blank" data-tooltip="Twitter">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="btn btn-floating btn-large btn-flat tooltipped" target="_blank" data-tooltip="GitHub">
+                    <a href="https://github.com/hiteshkacholiya" class="btn btn-floating btn-large btn-flat tooltipped"
+                        target="_blank" data-tooltip="GitHub">
                         <i class="fa fa-github"></i>
                     </a>
                 </li>
                 <li>
+                    <a href="https://stackexchange.com/users/16331985/hitesh-kacholiya"
+                        class="btn btn-floating btn-large btn-flat tooltipped" target="_blank"
+                        data-tooltip="Stack Overflow">
+                        <i class="fa fa-stack-overflow"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/h_kacholiya" class="btn btn-floating btn-large btn-flat tooltipped"
+                        target="_blank" data-tooltip="Twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <!-- <li>
                     <a href="" class="btn btn-floating btn-large btn-flat tooltipped" target="_blank" data-tooltip="Codewars">
                         <i class="fa fa-code"></i>
                     </a>
@@ -68,21 +76,805 @@
                     <a href="" class="btn btn-floating btn-large btn-flat tooltipped" target="_blank" data-tooltip="CodePen">
                         <i class="fa fa-codepen"></i>
                     </a>
-                </li>
+                </li> -->
             </ul>
         </div>
+        <br>
         <div class="mouse-icon">
             <div class="mouse-wheel animated infinite fadeOutDown"></div>
         </div>
+        <!-- <div class="scroll-right">
+                <p>11 Years of IT Experience</p>
+        </div> -->
     </section>
+
+    <!-- Navigation -->
+    <nav class="z-depth-1-half">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+        <div class="nav-wrapper container">
+            <!--replace this with personal logo-->
+            <a href="#!" class="brand-logo" style="color:rgba(51, 122, 183, 1);">HK</a>
+            <div>
+                <a href="#!" data-activates="mobile-nav" class="button-collapse">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down" id="desktop-nav">
+                    <li><a href="#intro">Home</a></li>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#exp">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-nav">
+                    <li><a href="#intro">Home</a></li>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#exp">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Me Summary -->
+    <section id="aboutme">
+        <div id="about" style="background: rgba(51, 122, 183, 1);">
+            <div class="container">
+                <table style="line-height: normal;">
+                    <tr style="width: 100%;">
+                        <td style="width: 20%;">
+                            <div class="row wow fadeIn" data-wow-duration="2s" data-wow-offset="100">
+                                <img style="width: 100%;border-radius: 50%" src="assets/images/disp-pic.jpg" />
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <h2 style="text-align: center; color: white;">
+                                    <i class="fa fa-user"></i> About Me
+                                </h2>
+                            </div>
+                            <div class="col-md-8" style="text-align: center;  font-weight: lighter;">
+                                <p>I am currently working with Infosys Ltd. in Houston, TX as a Technology Lead.</p>
+                                <p>I am an experienced IT professional with over 11 years of industry experience working
+                                    and delivering complete solutions using Microsoft Technology Stack - Microsoft
+                                    Azure, Microsoft SharePoint, Microsoft Office 365, .NET/SPFx/.NET Core Development
+                                    Platform. </p>
+                                <p>I cherish learning new stuff, automating processes, operations, provide more
+                                    self-serve capacity to end users & enhance overall user experience by designing and
+                                    implementing complex automations using the latest technological developments.
+                                    I have been responsible for design, delivery and execution of complex Cloud
+                                    Migrations from on-premises to Azure IaaS. </p>
+                                <p>I aspire to build on the technical knowledge in other cloud spaces as well in order
+                                    to evangelize digital transformations and cloud adaptation for clients. </p>
+                                <p>This website is an attempt to showcases my overall work experience and highlight key
+                                    skills that I have acquired over the years.</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="exp">
+        <div id="experience" style="background: rgba(51, 122, 183, 1);">
+            <div class="container" style="background: rgba(51, 122, 183, 1);">
+                <h2 style="text-align: center; text-transform:none; font-weight: bold; color: white;">
+                    <i class="fa fa-briefcase"></i> Work Experience
+                </h2>
+                <div class="timeline">
+                    <ul>
+                        <li>
+                            <div class="row wow fadeInUp">
+                                <div class="timeline-icon">
+                                    <h3 style="text-align:center;">
+                                        <i class="fa fa-map-marker"></i>
+                                        <span class="timeline span">Houston, TX, USA</span>
+                                    </h3>
+                                </div>
+                                <div class="timeline-content col s12 m5 z-depth-2">
+                                    <h5 class="white-text">Technology Lead</h5>
+                                    <h6 class="white-text">Infosys Limited</h6>
+                                    <h6 class="white-text">Aug 2014 - Present</h6>
+                                    <p style="color: ghostwhite; font-weight: normal;">
+                                        <b></b>In this customer facing role of Technology Lead, I was trusted with the
+                                        responsiblity to lead
+                                        the delivery of multiple projects involving multiple cloud migrations from
+                                        on-premises to Azure IaaS,
+                                        SharePoint 2013 application upgrades, identifying automation opportunities in
+                                        SharePoint application
+                                        and infrastructure support, designing and architecting solutions for automating
+                                        business processes
+                                        and enhancing overall end user experience. My roles and responsiblities included
+                                        interfacing with
+                                        business stakeholders, analyzing as-is processes, designing future state
+                                        solutions, performing proof
+                                        of concepts, presenting solutions to technical forums, writing code for
+                                        automations etc.
+                                    </p>
+                                    <div class="divider"></div>
+                                    <p style="color: ghostwhite;font-weight: normal;">
+                                        <b>Technology Highlights:</b> Microsoft Azure, Azure Functions, Azure Logic
+                                        Apps, Azure DevOps, Azure Bot Framework,
+                                        ARM Templates, Azure API Management, Microsoft Cognitive Services, Azure App
+                                        Services,
+                                        Microsoft SharePoint 2013, Microsoft SharePoint Online, ServiceNow, C#, .Net,
+                                        .Net Core,
+                                        JavaScript, REST API, PowerShell
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row wow fadeInUp">
+                                <div class="timeline-icon">
+                                    <h3 style="text-align:center;">
+                                        <i class="fa fa-map-marker"></i>
+                                        <span class="timeline span">Houston, TX, USA</span>
+                                    </h3>
+                                </div>
+                                <div class="timeline-content col s12 m5 z-depth-2">
+                                    <h5 class="white-text">Technology Analyst</h5>
+                                    <h6 class="white-text">Infosys Limited</h6>
+                                    <h6 class="white-text">Mar 2014 - Jul 2014</h6>
+                                    <p style="color: ghostwhite; font-weight: normal;">
+                                        In my first onsite assignment, I was responsible for leading a team of
+                                        developers to develop a
+                                        heavily customized Enterprise Document Management System on top of SharePoint
+                                        2010.
+                                        My roles and responsiblities included designing, developing and testing custom
+                                        SharePoint solutions,
+                                        engaging with business stakeholders to gather requirements, facilitate User
+                                        Acceptance Testing,
+                                        lead data migration for various business regions around the world on to
+                                        SharePoint 2010, providing ELS and steady state support
+                                        and piloting the first SharePoint 2010 to SharePoint 2013 migration for client.
+                                    </p>
+                                    <div class="divider"></div>
+                                    <p style="color: ghostwhite; font-weight: normal;">
+                                        <b>Technology Highlights:</b> Microsoft SharePoint 2010, Microsoft SharePoint
+                                        2013, C#, .Net Framework,
+                                        PowerShell, JavaScript
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row wow fadeInUp">
+                                <div class="timeline-icon">
+                                    <h3 style="text-align:center;">
+                                        <i class="fa fa-map-marker"></i>
+                                        <span class="timeline span">Pune, MH, India</span>
+                                    </h3>
+                                </div>
+                                <div class="timeline-content col s12 m5 z-depth-2">
+                                    <h5 class="white-text">Technology Analyst</h5>
+                                    <h6 class="white-text">Infosys Limited</h6>
+                                    <h6 class="white-text">Apr 2013 - Mar 2014</h6>
+                                    <p style="color: ghostwhite; font-weight: normal;">
+                                        In this role, I was responsible for development, unit testing, integration
+                                        testing, documentation, proof of concepts,
+                                        user acceptance testing, bug fixes and production release of custom components
+                                        for the heavily customized
+                                        Enterprise Document Management system on SharePoint 2010.
+                                    </p>
+                                    <div class="divider"></div>
+                                    <p style="color: ghostwhite; font-weight: normal;">
+                                        <b>Technology Highlights:</b> Microsoft SharePoint 2010, C#, .Net Framework,
+                                        JavaScript, SQL Server 2008 R2
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row wow fadeInUp">
+                                <div class="timeline-icon">
+                                    <h3 style="text-align:center;">
+                                        <i class="fa fa-map-marker"></i>
+                                        <span class="timeline span">Pune, MH, India</span>
+                                    </h3>
+                                </div>
+                                <div class="timeline-content col s12 m5 z-depth-2">
+                                    <h5 class="white-text">Senior Systems Engineer</h5>
+                                    <h6 class="white-text">Infosys Limited</h6>
+                                    <h6 class="white-text">Oct 2011 - Mar 2013</h6>
+                                    <p style="color: ghostwhite; font-weight: normal;">
+                                        As a senior developer in the team, I was tasked with developement & execution
+                                        phase for multiple
+                                        web-based applications developed on various vesions of .Net Framework along with
+                                        assisting in designs.
+                                        I was also engaged for developing custom reporting for the application.
+                                    </p>
+                                    <div class="divider"></div>
+                                    <p style="color: ghostwhite; font-weight: normal;">
+                                        <b>Technology Highlights:</b> C#, .Net Framework, Web Services, SQL Server 2008,
+                                        AJAX
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row wow fadeInUp">
+                                <div class="timeline-icon">
+                                    <h3 style="text-align:center;">
+                                        <i class="fa fa-map-marker"></i>
+                                        <span class="timeline span">Pune, MH, India</span>
+                                    </h3>
+                                </div>
+                                <div class="timeline-content col s12 m5 z-depth-2">
+                                    <h5 class="white-text">Systems Engineer</h5>
+                                    <h6 class="white-text">Infosys Limited</h6>
+                                    <h6 class="white-text">May 2010 - Sept 2011</h6>
+                                    <p style="color: ghostwhite; font-weight: normal;">
+                                        Being the youngest developer in the team, got a lot to learn about production
+                                        programming and support during the projects.
+                                        I was responsible for coding, debugging, bug fixing, minor enhancements and
+                                        production support.
+                                    </p>
+                                    <div class="divider"></div>
+                                    <p style="color: ghostwhite; font-weight: normal;">
+                                        <b>Technology Highlights:</b> C#, ASP.NET, ADO.NET, AJAX, SQL Server 2005,
+                                        Oracle 10g
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row wow fadeInUp">
+                                <div class="timeline-icon">
+                                    <h3 style="text-align:center;">
+                                        <i class="fa fa-map-marker"></i>
+                                        <span class="timeline span">Mysore, KA, India</span>
+                                    </h3>
+                                </div>
+                                <div class="timeline-content col s12 m5 z-depth-2">
+                                    <h5 class="white-text">Software Engineer</h5>
+                                    <h6 class="white-text">Infosys Limited</h6>
+                                    <h6 class="white-text">Nov 2008 - Apr 2010</h6>
+                                    <p style="color: ghostwhite; font-weight: normal;">
+                                        The first IT job started with this role and a rigorous 6 month long training in
+                                        .Net and Mainframes.
+                                        The project that I was deployed to offerred me great opportunity to develop and
+                                        enhance the custom data load solution
+                                        and enhance its performance by fine tuning the database queries.
+                                    </p>
+                                    <div class="divider"></div>
+                                    <p style="color: ghostwhite; font-weight: normal;">
+                                        <b>Technology Highlights:</b> C#, ASP.NET, Oracle 10g
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div>
+                                    </br>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications">
+
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div id="about" style="background: rgba(51, 122, 183, 1);">
+            <div class="container">
+                <table style="line-height: normal;">
+                    <tr style="width: 100%;">
+                        <td style="width: 38%;">
+                            <div style="text-align: right;;">
+                                <h2><img style="width: 20%;" src="assets/images/skillsicon.jpg" /></h2>
+                            </div>
+                        </td>
+                        <td>
+                            <div style="text-align: left;">
+                                <h2 style="text-align: left; padding-left: 25px; color: white;">Skills
+                                </h2>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <div>
+                                <i class="fa fa-cogs"
+                                    style="color: rgba(176, 207, 237, 1);font-size: xx-large;padding-left: 25px;"></i>
+                                <span style=" font-size: xx-large; color: rgba(176, 207, 237, 1);padding-left: 10px;">
+                                    Primary Skills
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%;">
+                            <div class="col m6 s12">
+                                <div class="skills-panel wow fadeInLeft">
+                                    <p>Microsoft Azure </p>
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 90%"></div>
+                                    </div>
+
+                                    <p>Analysis, Design &amp; Solution</p>
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 95%"></div>
+                                    </div>
+
+                                    <p>CICD & DevOps</p>
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 65%"></div>
+                                    </div>
+
+                                    <p>Databases</p>
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 55%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="width: 50%;">
+                            <div class="col m6 s12">
+                                <div class="skills-panel wow fadeInRight">
+                                    <p>Microsoft SharePoint (2010, 2013, SPO)</p>
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 70%"></div>
+                                    </div>
+
+                                    <p>C# &amp; .Net Framework</p>
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 80%"></div>
+                                    </div>
+
+                                    <p>Chatbots, Digital Assistants &amp; Automations</p>
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 65%"></div>
+                                    </div>
+
+                                    <p>Comunication & Stakeholder Management </p>
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 100%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">
+                            <div>
+                                <i class="fa fa-cogs"
+                                    style="color: rgba(176, 207, 237, 1);font-size: xx-large;padding-left: 25px;"></i>
+                                <span style=" font-size: xx-large; color: rgba(176, 207, 237, 1);padding-left: 10px;">
+                                    Other Skills
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <!--Skill cloud -->
+                <div id="skillCloud" style="padding-left: 30px;"></div>
+                </br>
+            </div>
+        </div>
+    </section>
+
+ 
+    <!-- Projects -->
+    <section id="projects">
+            <div id="about" style="background: rgba(51, 122, 183, 1);">
+                <div class="container">
+                    <table style="line-height: normal;">
+                        <tr style="width: 100%;">
+                            <td style="width: 38%;">
+                                <div style="text-align: right;;">
+                                    <h2></h2>
+                                </div>
+                            </td>
+                            <td>
+                                <div style="text-align: left;">
+                                    <h2 style="text-align: left; padding-left: 25px; color: white;">
+                                        <i class="fa fa-tasks"></i> Projects
+                                    </h2>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="projects-container" class="row">
+                        <div class="col s12 m6 l4 project z-projects-depth">
+                            <!-- Portfolio GIT Project-->
+                            <div class="card wow fadeIn">
+                                <!--<div class="card-image">
+                                        <img src="http://dummyimage.com/400x400/dedede/000000.png&text=Coming+Soon" />
+                                    </div>-->
+                                <div class="card-content" style="background-color: rgba(51, 122, 183, 1);">
+                                    <h5><i class="fas fa-user-circle"></i> Portfolio Website</h5>
+                                    <p>
+                                        HTML5, CSS3, Materialize, JavaScript, jQuery, JavaScript Libraries, Web Design,
+                                        GitHub
+                                    </p>
+                                    </br>
+                                    <div class="divider-project"></div>
+                                    </br>
+                                    <p style="color: ghostwhite; font-weight: normal;">
+                                        As part of personal project, I have created this portfolio website to showcases
+                                        my work experience and skills.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- PROJECT: BP Operations Automations -->
+                        <div class="col s12 m6 l4 project z-projects-depth">
+                            <div class="card wow fadeIn">
+                                <!--<div class="card-image">
+                                        <img src="http://dummyimage.com/400x400/dedede/000000.png&text=Coming+Soon" />
+                                    </div>-->
+                                <div class="card-content" style="background-color: rgba(51, 122, 183, 1);">
+                                    <h5><i class="fas fa-magic"></i> BP Operations Automations</h5>
+                                    <p>
+                                        Microsoft Azure, Microsoft Cognitive Services, Agile, C#, Microsoft Bot Framework,
+                                        SharePoint 2013 (on Azure IaaS), SharePoint Online, Office 365, MS Flows, Remedy,
+                                        ServiceNow, Logic Apps, APIs, API Management
+                                    </p>
+                                    </br>
+                                    <div class="divider-project"></div>
+                                    </br>
+                                    <p style="color: ghostwhite; font-weight: normal;">
+                                        As a product owner and architect for this project, I was responsible for analyzing
+                                        the
+                                        operations ticket trends, identifying potential use cases for automation,
+                                        configuring
+                                        CICD pipeline, designing orchestrations for each use case/support problems/savings
+                                        opportunity, perform POCs and implement orchestration, design and implement custom
+                                        Azure ChatBot using Bot Framework, QnA, guided conversation, LUIS, Logic Apps,
+                                        App Insights, Azure Table Storage and Azure Functions to assist self-service of
+                                        routine support requests by implementing end-to-end automations for Azure AD,
+                                        SharePoint 2013 on Azure IaaS and SharePoint Online use cases, integrating with ITSM
+                                        systems (Remedy/ServiceNow) for all automation orchestration and participating in
+                                        technical
+                                        discussions with BP architects.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- PROJECT: BP ChatBots -->
+                        <div class="col s12 m6 l4 project z-projects-depth">
+                            <div class="card wow fadeIn">
+                                <!--<div class="card-image">
+                        <img src="http://dummyimage.com/400x400/dedede/000000.png&text=Coming+Soon" />
+                    </div>-->
+                                <div class="card-content" style="background-color: rgba(51, 122, 183, 1);">
+                                    <h5><i class="fas fa-robot"></i> ChatBots Development</h5>
+                                    <p>
+                                        Microsoft Azure, Microsoft Cognitive Services, Agile,
+                                        C#, Microsoft Bot Framework, ServiceNow, SharePoint Online,
+                                        Sales Force Integration
+                                    </p>
+                                    </br>
+                                    <div class="divider-project"></div>
+                                    </br>
+                                    <p style="color: ghostwhite; font-weight: normal;">
+                                        The project involves delivering multiple ChatBot implementations with customized
+                                        use case automations for mulitple business functions in BP - Human Resources (HR),
+                                        Enterprise Project Capability (EPC) and BPX Energy operations. I was Architect &
+                                        Developer
+                                        for this engagement and was responsible for design, development, architecting flows,
+                                        integrating
+                                        with ITSM tools and Salesforce Live Chat and participating in architectural
+                                        discussion &
+                                        stakeholder management.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- PROJECT: BP Automated Farm Build -->
+                        <div class="col s12 m6 l4 project z-projects-depth">
+                            <div class="card wow fadeIn">
+                                <!--<div class="card-image">
+                        <img src="http://dummyimage.com/400x400/dedede/000000.png&text=Coming+Soon" />
+                    </div>-->
+                                <div class="card-content" style="background-color: rgba(51, 122, 183, 1);">
+                                    <h5><i class="fas fa-magic"></i> Automated SharePoint Farm Build</h5>
+                                    <p>
+                                        Microsoft Azure, SharePoint 2016, PowerShell, ARM Template, Agile Development
+                                    </p>
+                                    </br>
+                                    <div class="divider-project"></div>
+                                    </br>
+                                    <p style="color: ghostwhite; font-weight: normal;">
+                                        The project scope included manual and one-click automated build, setup and
+                                        configuration of a new SharePoint 2016 farm using Azure IaaS, PowerShell Scripts,
+                                        ARM Templates and Desired State Configurations for servers.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- PROJECT: BP OneDoc -->
+                        <div class="col s12 m6 l4 project z-projects-depth">
+                            <div class="card wow fadeIn">
+                                <!--<div class="card-image">
+                        <img src="http://dummyimage.com/400x400/dedede/000000.png&text=Coming+Soon" />
+                    </div>-->
+                                <div class="card-content" style="background-color: rgba(51, 122, 183, 1);">
+                                    <h5><i class="fas fa-sitemap"></i> BP OneDoc</h5>
+                                    <p>
+                                        SharePoint Framework, SharePoint Online, Scrum, Office 365, PnP Framework, Agile
+                                    </p>
+                                    </br>
+                                    <div class="divider-project"></div>
+                                    </br>
+                                    <p style="color: ghostwhite; font-weight: normal;">
+                                        In this multi phased project delivered using Scrum Agile methodology, team was
+                                        responsible for creating a lightweight document manaement solution on SharePoint
+                                        Online. I was Technical Lead/Architect for this project and was part of the design
+                                        and
+                                        development of customized feature, defining the system architecture, automation of
+                                        site
+                                        provisioing and was also a product owner proxy for this project.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!--BP GCRO Cloud Migration-->
+                        <div class="col s12 m6 l4 project z-projects-depth">
+                            <div class="card wow fadeIn">
+                                <!--<div class="card-image">
+                            <img src="http://dummyimage.com/400x400/dedede/000000.png&text=Coming+Soon" />
+                        </div>-->
+                                <div class="card-content" style="background-color: rgba(51, 122, 183, 1);">
+                                    <h5><i class="fas fa-cloud-upload-alt"></i> GCRO Cloud Migration</h5>
+                                    <p>
+                                        PowerShell, Microsoft Azure, SharePoint 2010, .Net
+                                    </p>
+                                    </br>
+                                    <div class="divider-project"></div>
+                                    </br>
+                                    <p style="color: ghostwhite; font-weight: normal;">
+                                        The project involved as-is analysis and designing to-be architecture,
+                                        requirements gathering, performing POCs, setting up Azure PaaS search, provisioning
+                                        resources
+                                        in Azure, defining the migration strategy for data and application, performing admin
+                                        function
+                                        for the Azure subscription, setup DFS namespace configuration in Azure,
+                                        define data validation strategy in compliance with legal team, develop ARM templates
+                                        for provisioning
+                                        IaaS and implementing the solutions defined. I was Technial Lead/Architect for this
+                                        work.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- BP SharePoint 2013 Upgrade & Migration to Azure IaaS-->
+                        <div class="col s12 m6 l4 project z-projects-depth">
+                            <div class="card wow fadeIn">
+                                <!--<div class="card-image">
+                                <img src="http://dummyimage.com/400x400/dedede/000000.png&text=Coming+Soon" />
+                            </div>-->
+                                <div class="card-content" style="background-color: rgba(51, 122, 183, 1);">
+                                    <h5><i class="fas fa-cloud-upload-alt"></i> BP SharePoint 2013 Upgrade & Migration on
+                                        Azure IaaS</h5>
+                                    <p>
+                                        SharePoint 2013, C#, PowerShell, Microsoft Azure
+                                    </p>
+                                    </br>
+                                    <div class="divider-project"></div>
+                                    </br>
+                                    <p style="color: ghostwhite; font-weight: normal;">
+                                        This development and migraiton project required team to upgrade the enterprise
+                                        document management system being used by BP. We upgraded the DMS system from
+                                        SharePoint
+                                        2010 to SharePoint 2013 and hosted it on Azure IaaS. The functionaties were
+                                        remediated to be
+                                        compatible with SharePoint 2013. Once the application stabilized, the data migration
+                                        was put
+                                        in motion one region after the other migrating all of the SharePoint on-premises
+                                        foot print to
+                                        Azure IaaS. I was the Technology Lead/Developer for this project and handled this
+                                        from client
+                                        location.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- BP ASM to ARM Migration-->
+                        <div class="col s12 m6 l4 project z-projects-depth">
+                            <div class="card wow fadeIn">
+                                <!--<div class="card-image">
+                                    <img src="http://dummyimage.com/400x400/dedede/000000.png&text=Coming+Soon" />
+                                </div>-->
+                                <div class="card-content" style="background-color: rgba(51, 122, 183, 1);">
+                                    <h5><i class="fas fa-cloud"></i> BP ASM to ARM Migration </h5>
+                                    <p>
+                                        PowerShell, Microsoft Azure
+                                    </p>
+                                    </br>
+                                    <div class="divider-project"></div>
+                                    </br>
+                                    <p style="color: ghostwhite; font-weight: normal;">
+                                        IaaS platform setup for the SharePoint 2013 farm from Azure Service Model
+                                        (ASM) to Azure Resource Model (ARM). The project includes migration of entire
+                                        workload for Azure SharePoint Service lines consisting of ~800 Servers,
+                                        500 Cloud Services and 300 Storage Accounts. I was the senior developer in the
+                                        team trusted with this move.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- BP Database as a Service-->
+                        <div class="col s12 m6 l4 project z-projects-depth">
+                            <div class="card wow fadeIn">
+                                <!--<div class="card-image">
+                                        <img src="http://dummyimage.com/400x400/dedede/000000.png&text=Coming+Soon" />
+                                    </div>-->
+                                <div class="card-content" style="background-color: rgba(51, 122, 183, 1);">
+                                    <h5><i class="fas fa-database"></i> BP DBaaS </h5>
+                                    <p>
+                                        C#, PowerShell, Microsoft Azure, .Net Core, MVC 5, JIRA, BitBucket
+                                    </p>
+                                    </br>
+                                    <div class="divider-project"></div>
+                                    </br>
+                                    <p style="color: ghostwhite; font-weight: normal;">
+                                        As implementer, I was involved in the requirements gathering, architecture design
+                                        and laying the foundation of Database As a Service function for BP.
+                                        I performed as-is analysis of existing AWS database procurement system,
+                                        CI/CD using BitBucket integration with Visual Studio, POCs,
+                                        documentation of the architecture of product, completing user stories for planning
+                                        and requirements.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- PROJECT: BP Global DMS -->
+                        <div class="col s12 m6 l4 project z-projects-depth">
+                            <div class="card wow fadeIn">
+                                <!--<div class="card-image">
+                                        <img src="http://dummyimage.com/400x400/dedede/000000.png&text=Coming+Soon" />
+                                    </div>-->
+                                <div class="card-content" style="background-color: rgba(51, 122, 183, 1);">
+                                    <h5><i class="fas fa-passport"></i> BP Document Management System</h5>
+                                    <p>
+                                        SharePoint 2010, Event &amp; Feature Receivers, Timer Jobs, Managed Metadata,
+                                        Document Management, JavaScript, Architecture, Document Migration, SharePoint 2010,
+                                        C#,
+                                        SQL Server
+                                    </p>
+                                    </br>
+                                    <div class="divider-project"></div>
+                                    </br>
+                                    <p style="color: ghostwhite; font-weight: normal;">
+                                        Design, setup and development of Enterprise Document Management System for BP.
+                                        I was the Technology Lead/Developer for the development & migration track.
+                                        Tasks include but not limited to proposal creation, technical estimations,
+                                        use case creation, high level design, detailed level design, code development,
+                                        code reviews, SIT/UAT review, defect tracking, issue resolutions, coordination, ELS
+                                        etc.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!--CAFET Pfizer-->
+                        <div class="col s12 m6 l4 project z-projects-depth">
+                            <div class="card wow fadeIn">
+                                <!--<div class="card-image">
+                                            <img src="http://dummyimage.com/400x400/dedede/000000.png&text=Coming+Soon" />
+                                        </div>-->
+                                <div class="card-content" style="background-color: rgba(51, 122, 183, 1);">
+                                    <h5><i class="fas fa-flag-checkered"></i> Pfizer CAFET </h5>
+                                    <p>
+                                        ASP.NET 2.0, AJAX, Java Scripts, SQL-SERVER 2008
+                                    </p>
+                                    </br>
+                                    <div class="divider-project"></div>
+                                    </br>
+                                    <p style="color: ghostwhite; font-weight: normal;">
+                                        The development team was responsible for creating a robust system for Pfizer to
+                                        handle the contests, awards and fulfilment. As a senior developer, I completed
+                                        multiple enhancements, features and was also part of the SWAT team for the project.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Pfizer Support & Enhancements -->
+                        <div class="col s12 m6 l4 project z-projects-depth">
+                            <div class="card wow fadeIn">
+                                <!--<div class="card-image">
+                            <img src="http://dummyimage.com/400x400/dedede/000000.png&text=Coming+Soon" />
+                        </div>-->
+                                <div class="card-content" style="background-color: rgba(51, 122, 183, 1);">
+                                    <h5><i class="fas fa-headset"></i></i> Pfizer Support & Enhancements </h5>
+                                    <p>
+                                        ASP.NET, AJAX, Java Scripts, SQL-SERVER 2008, Oracle 10g, ADO.NET
+                                    </p>
+                                    </br>
+                                    <div class="divider-project"></div>
+                                    </br>
+                                    <p style="color: ghostwhite; font-weight: normal;">
+                                        I was part of the Pfizer support team, as a developer, that were responsible for
+                                        supporting the
+                                        production application and performing major/minor enhancements. I worked on multiple
+                                        enhancements for applications like Key Account Relationship Management Application
+                                        (KARMA),
+                                        Health Care Exchange (HCXChange) and supported applications like MetaEdit,
+                                        MyBioPharma,
+                                        Wellness Inventory Reports, Amigos En Salud, eOrganizer, Display in a Box, Product
+                                        Discontinuation Request Systems etc.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+    <!-- Education -->
+    <section id="education">
+
+    </section>
+
     <!-- Footer -->
     <footer class="page-footer">
         <div class="footer-copyright">
-            <div class="container center">
-                This website is designed and maintained by <b>Hitesh Kacholiya</b>.
+            <div class="container center" style="font-weight: bold; text-align: center; width: 80%;">
+                This website is open source.
+                Check it out on <a href="https://github.com/hiteshkacholiya/hiteshkacholiya.github.io"
+                    style="color: darkblue; font-weight: bold;">GitHub</a>
+                &copy; 2019 Hitesh Kacholiya
             </div>
         </div>
+        <!-- <div >
+                <span id="to-top">
+                    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                </span>
+            </div> -->
     </footer>
+
+    <!-- Script References -->
+    <script src="assets/js/jquery-1.12.1.js"></script>
+    <script src="assets/js/materialize.js"></script>
+    <script src="assets/js/typed.min.js"></script>
+    <script src="assets/js/jquery.sticky.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/jquery.stellar.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/init.js"></script>
+
+    <script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function () { myFunction() };
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
 
     <!-- Google Analytics -->
     <script>
@@ -92,7 +884,7 @@
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date();
             a = s.createElement(o),
-              m = s.getElementsByTagName(o)[0];
+                m = s.getElementsByTagName(o)[0];
             a.async = 1;
             a.src = g;
             m.parentNode.insertBefore(a, m)
@@ -100,6 +892,8 @@
 
         ga('create', 'UA-75119700-1', 'auto');
         ga('send', 'pageview');
+
     </script>
 </body>
+
 </html>
