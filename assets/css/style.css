@@ -540,3 +540,17 @@ footer.page-footer {
         width: 100%;
     }
 }
+
+
+/*--------------------------------------
+    Word Cloud
+----------------------------------------*/
+#myChart {
+	height:100%;
+	width:100%;
+    min-height:150px;
+    max-height: 300px;
+}
+.zc-ref {
+	display:none;
+}
