@@ -6090,7 +6090,7 @@ button.btn-floating {
 .btn-flat {
   box-shadow: none;
   background-color: transparent;
-  color: #343434;
+  color: #ffffff;
   cursor: pointer; }
   .btn-flat.disabled {
     color: #b3b3b3;

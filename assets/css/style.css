@@ -52,7 +52,8 @@
     z-index: 10;
     background-color: #337ab7;
     line-height: 1.4285;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
 }
 
     .intro-text-container h4 {
@@ -62,10 +63,12 @@
         letter-spacing:0.05em;
         line-height: 0.9em;
         margin:0;
+        width: 100%;
     }
 
     .intro-text-container h1 {
         font-weight: 600;
+        width: 100%;
     }
 
 .social-icons li {
