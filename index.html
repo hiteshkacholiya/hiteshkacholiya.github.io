@@ -10,14 +10,15 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!--Import Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
     <!-- <link href="/assets/css/fontawesome-all.css" rel="stylesheet"> -->
 
     <!-- Stylesheet Refs -->
     <link href="assets/css/animate.min.css" rel="stylesheet" />
     <link href="assets/css/materialize.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <!-- <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css"> -->
 
     <!-- Word Cloud Refs-->
     <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
@@ -376,24 +377,25 @@
     <section id="certifications">
         <div class="container z-depth-2" style="width: 100%; max-width: none;background: rgba(51, 122, 183, 1);">
             <div class="container">
-                <h2 style="text-align: center; text-transform:none; font-weight: bold; color: white; padding-bottom: 0px;">
-                    <i class="fa fa-trophy"></i> Certifications
+                <h2
+                    style="text-align: center; text-transform:none; font-weight: bold; color: white; padding-bottom: 0px;">
+                    <i class="fas fa-trophy"></i> Certifications
                 </h2>
             </div>
-            <div class="carousel carousel-indicators">
+            <div class="carousel carousel-indicators" style="padding-bottom: 0px; padding-top:0px">
                 <a class="carousel-item z-depth-2" href="#one!" style="padding-top: 30px; background-color: #3a3663;">
                     <h5>
                         Microsoft&reg; Certified Azure Solutions Architect Expert
                     </h5>
                     <div class="divider"></div>
                     <p style=" font-weight: bold;">
-                        Date: Aug 29, 2019 <br/>
+                        Date: Aug 29, 2019 <br />
                         Valid until: Aug 29, 2021
                     </p>
                 </a>
                 <a class="carousel-item z-depth-2" href="#two!" style="padding-top: 35px;background-color: #414977">
                     <h5>
-                        Microsoft&reg; Certified Solutions Expert: <br/> Cloud Platform and Infrastructure
+                        Microsoft&reg; Certified Solutions Expert: <br /> Cloud Platform and Infrastructure
                     </h5>
                     <div class="divider"></div>
                     <p style="font-weight: bold;">
@@ -415,7 +417,7 @@
                     </h5>
                     <div class="divider"></div>
                     <p style="font-weight: bold;">
-                        Date: Mar 08, 2019 <br/>
+                        Date: Mar 08, 2019 <br />
                         Valid until: Mar 06, 2020
                     </p>
                 </a>
@@ -447,10 +449,58 @@
                     </p>
                 </a>
             </div>
-            <div class="container">
-                <h2 style="text-align: center; text-transform:none; font-weight: bold; color: white; padding-bottom: 0px;">
-                    <i class="fa fa-trophy"></i> Awards & Recognition
+            <div class="container" style="padding-top:0px">
+                <h2 style="text-align: center; text-transform:none; font-weight: bold; color: white;">
+                    <i class="fas fa-medal"></i> Awards & Recognition
                 </h2>
+                <div class="carousel" style="padding-bottom: 0px; padding-top:0px; height: 210px;">
+                    <a class="carousel-item z-depth-2" href="#one!"
+                        style="padding-top: 30px; background-color: #839abd;">
+                        <h5>
+                            Microsoft&reg; MAPA Azure Champs
+                        </h5>
+                        <div class="divider"></div>
+                        <p style=" font-weight: bold;">
+                            August, 2017
+                        </p>
+                    </a>
+                    <a class="carousel-item z-depth-2" href="#two!" style="padding-top: 35px;background-color: #6789cc">
+                        <h5>
+                            Microsoft&reg; MAPA Office Champs
+                        </h5>
+                        <div class="divider"></div>
+                        <p style="font-weight: bold;">
+                            November, 2018
+                        </p>
+                    </a>
+                    <a class="carousel-item z-depth-2" href="#three!"
+                        style="padding-top: 50px;background-color: #526ea4">
+                        <h5>
+                            BP&reg; Face of the Quarter Award <br>
+                            First Quarter 2019
+                        </h5>
+                        <div class="divider"></div>
+                        <p style="font-weight: bold;">
+                            May, 2019
+                        </p>
+                    </a>
+                    <a class="carousel-item z-depth-2" href="#four!"
+                        style="padding-top: 15px;background-color: #485775">
+                        <h5>
+                            Infosys&reg; Digital Skill Tag: Public Cloud Professional
+                        </h5>
+                        <p style="font-weight: lighter;padding-top:0px; padding-bottom: 0px;">
+                            One of the first 4 US Infoscions to be digitally tagged
+                        </p>
+                        <div class="divider"></div>
+                        <p style="font-weight: bold;">
+                            July, 2019
+                        </p>
+                    </a>
+                </div>
+                <br />
+                <br />
+                <br />
             </div>
         </div>
     </section>
@@ -461,7 +511,7 @@
                 <div class="row">
                     <div style="text-align: center;">
                         <h2 style="padding-left: 25px; color: white;">
-                            <img style="width: 8%; align-content: center;" src="assets/images/skillsicon.jpg" /> Skills
+                            <i class="fas fa-user-cog"></i> Skills
                         </h2>
                     </div>
                     <div>
@@ -898,7 +948,110 @@
 
     <!-- Education -->
     <section id="education">
-        <div class="container z-depth-2" style="width: 100%; max-width: none;">
+        <div class="container z-depth-2" style="width: 100%; max-width: none;background: rgba(51, 122, 183, 1);">
+            <div class="container">
+                <h2
+                    style="text-align: center; text-transform:none; font-weight: bold; color: white; padding-bottom: 0px;">
+                    <i class="fas fa-book-reader"></i> Education
+                </h2>
+            </div>
+            <div class="timeline-edu">
+                <ul>
+                    <li>
+                        <div class="row wow fadeIn">
+                            <div class="timeline-edu-icon">
+                                <h3 style="text-align:center;">
+                                    <i class="fas fa-laptop-code"></i>
+                                </h3>
+                            </div>
+                            <div class="timeline-edu-content col s12 m5 z-depth-2"
+                                style="background: rgba(51, 122, 183, 1); width: 60%;">
+                                <h5 class="white-text">
+                                    Training - .Net and Mainframe </h5>
+                                <h6 class="white-text">Infosys Limited</h6>
+                                <h6 class="white-text" style="padding-bottom: 1px;">Nov 2008 - May 2009</h6>
+                                <div class="divider"></div>
+                                <p style="color: ghostwhite; font-weight: normal;padding-top: 0px;">
+                                    After being recruited for Infosys Limited, I was required to complete extended
+                                    training in .Net for 4 months and Mainframe for 2 months before being deployed to
+                                    industrial projects.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row wow fadeIn">
+                            <div class="timeline-edu-icon">
+                                <h3 style="text-align:center;">
+                                    <i class="fas fa-university"></i>
+                                </h3>
+                            </div>
+                            <div class="timeline-edu-content col s12 m5 z-depth-2"
+                                style="background: rgba(51, 122, 183, 1); width: 60%;">
+                                <h5 class="white-text">
+                                    Bachelor of Engineering (B.E.)</h5>
+                                <h6 class="white-text">Medi-Caps University</h6>
+                                <h6 class="white-text" style="padding-bottom: 0px;" >2004 - 2008</h6>
+                                <div class="divider"></div>
+                                <p style="color: ghostwhite; font-weight: normal;padding-top: 0px;">
+                                    Completed my Bachelors of Engineering in Information Technology with 73.78% from
+                                    Medi-Caps University (formerly MITM) located in Indore, Madhya Pradesh, India.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row wow fadeIn">
+                            <div class="timeline-edu-icon">
+                                <h3 style="text-align:center;">
+                                    <i class="fas fa-school"></i>
+                                </h3>
+                            </div>
+                            <div class="timeline-edu-content col s12 m5 z-depth-2"
+                                style="background: rgba(51, 122, 183, 1); width: 60%;">
+                                <h5 class="white-text">
+                                    Higher Secondary (Mathematics/Science) </h5>
+                                <h6 class="white-text">Saint John's School</h6>
+                                <h6 class="white-text" style="padding-bottom: 0px;">2002 - 2004</h6>
+                                <div class="divider"></div>
+                                <p style="color: ghostwhite; font-weight: normal;padding-top: 0px;">
+                                    Cleared Higher Secondary with aggregate of 80% from Saint John’s School in Kota,
+                                    Rajasthan, India.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row wow fadeIn">
+                            <div class="timeline-edu-icon">
+                                <h3 style="text-align:center;">
+                                    <i class="fas fa-school"></i>
+                                </h3>
+                            </div>
+                            <div class="timeline-edu-content col s12 m5 z-depth-2"
+                                style="background: rgba(51, 122, 183, 1); width: 60%;">
+                                <h5 class="white-text">
+                                    Senior Secondary </h5>
+                                <h6 class="white-text">St. Joseph’s Convent Senior Secondary School</h6>
+                                <h6 class="white-text" style="padding-bottom: 0px;">1989 - 2002</h6>
+                                <div class="divider"></div>
+                                <p style="color: ghostwhite; font-weight: normal; padding-top: 0px;">
+                                    I was the District Topper in CBSE Board with 89.8% in Senior Secondary. I completed
+                                    Senior Secondary from St. Joseph’s Convent Senior Secondary School, Ratlam, Madhya
+                                    Pradesh, India.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                </br>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -944,20 +1097,20 @@
 
     <!-- Google Analytics -->
     <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        // (function (i, s, o, g, r, a, m) {
+        //     i['GoogleAnalyticsObject'] = r;
+        //     i[r] = i[r] || function () {
+        //         (i[r].q = i[r].q || []).push(arguments)
+        //     }, i[r].l = 1 * new Date();
+        //     a = s.createElement(o),
+        //         m = s.getElementsByTagName(o)[0];
+        //     a.async = 1;
+        //     a.src = g;
+        //     m.parentNode.insertBefore(a, m)
+        // })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-75119700-1', 'auto');
-        ga('send', 'pageview');
+        // ga('create', 'UA-75119700-1', 'auto');
+        // ga('send', 'pageview');
 
     </script>
 </body>

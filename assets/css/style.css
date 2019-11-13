@@ -557,3 +557,115 @@ footer.page-footer {
 .zc-ref {
 	display:none;
 }
+
+/*--------------------------------------
+    Education Timeline
+----------------------------------------*/
+
+.timeline-edu, .timeline-edu li {
+    position: relative;
+}
+
+    .timeline-edu .timeline-edu-icon {
+        position: relative;
+        color: #337ab7 ;
+        left: 20%;
+        margin-left: -8px;
+        height: 60px;
+        width: 60px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        z-index: 99;
+    }
+
+    .timeline-edu ul:before {
+        content: '';
+        position: absolute;
+        background-color: #ffffff;
+        height: 100%;
+        width: 2px;
+        left: 21%;
+        z-index: 0;
+    }
+
+.row div.timeline-edu-content {
+    padding: 20px;
+    background-color:rgba(51, 122, 183, 1);
+    position: relative;
+    z-index: 100;
+}
+
+.timeline-edu-content p {
+    padding-top: 10px;
+    font-size: 0.9rem;
+}
+
+.timeline-edu-content .divider {
+    opacity: 0.4;
+}
+
+@media (min-width: 400px) {
+    .timeline-edu ul li:nth-child(odd) div.timeline-edu-content {
+        text-align: left;
+        left: 24%
+    }
+
+        .timeline-edu ul li:nth-child(odd) div.timeline-edu-content:before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            right: 100%;
+            border-top: 16px solid transparent;
+            border-bottom: 16px solid transparent;
+            border-right: 20px solid #ffffff;
+        }
+
+    .timeline-edu ul li:nth-child(even) div.timeline-edu-content {
+        left: 24%;
+        text-align: left;
+    }
+
+        .timeline-edu ul li:nth-child(even) div.timeline-edu-content:before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: -20px;
+            ;
+            border-top: 16px solid transparent;
+            border-bottom: 16px solid transparent;
+            border-right: 20px solid #ffffff;
+        }
+}
+
+.timeline-edu span {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    bottom: 0;
+    left: 47px;
+    line-height: 38px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 0;
+    
+    /* CSS3 Transition: */
+	-webkit-transition: 0.50s;
+	/* Future proofing (these do not work yet): */
+	-moz-transition: 0.50s;
+    transition: 0.50s;  
+}
+.timeline-edu h3:hover span
+{ 
+    width:auto; 
+    padding:0 30px;
+    overflow:visible;
+    text-decoration:none; 
+}
+
+.timeline-edu h3 span{
+	color:#ffffff;
+}
