@@ -74,25 +74,41 @@ $(function () {
     //----------------------------------------
 
     //Init Mixitup for Filtering of projects
-    (function () {
-        //$('#projects-container').mixItUp();
+    // (function () {
+    //     //$('#projects-container').mixItUp();
 
-        var isoGrid = $('#projects-container').isotope({
-            itemSelector: '.project',
-            percentPosition: true,
-            masonry: {
-                // use element for option               
-                columnWidth: '.project'
-            }
-        });
+    //     var isoGrid = $('#projects-container').isotope({
+    //         itemSelector: '.project',
+    //         percentPosition: true,
+    //         masonry: {
+    //             // use element for option               
+    //             columnWidth: '.project'
+    //         }
+    //     });
 
-        $('#projects-filter').on('click', 'li', function () {
-            var filterValue = $(this).attr('data-filter');
-            isoGrid.isotope({ filter: filterValue });
-        });
+    //     $('#projects-filter').on('click', 'li', function () {
+    //         var filterValue = $(this).attr('data-filter');
+    //         isoGrid.isotope({ filter: filterValue });
+    //     });
 
-    }());
+    // }());
 
+    //----------------------------------------
+    // Scroll
+    //----------------------------------------
+    $('#to-top').click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+    });
+
+    // Scroll to first element
+    $('#mouse-click-down').click(function() {
+        var scrollDistance = $('#intro').next().offset().top;
+        $('html, body').animate({
+            scrollTop: scrollDistance + 'px'
+        }, 500);
+    });
 
     //----------------------------------------
     // Certifications
