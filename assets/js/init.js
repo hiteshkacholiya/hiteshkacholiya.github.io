@@ -70,30 +70,6 @@ $(function () {
     }());
 
     //----------------------------------------
-    // Projects/Portfolio
-    //----------------------------------------
-
-    //Init Mixitup for Filtering of projects
-    // (function () {
-    //     //$('#projects-container').mixItUp();
-
-    //     var isoGrid = $('#projects-container').isotope({
-    //         itemSelector: '.project',
-    //         percentPosition: true,
-    //         masonry: {
-    //             // use element for option               
-    //             columnWidth: '.project'
-    //         }
-    //     });
-
-    //     $('#projects-filter').on('click', 'li', function () {
-    //         var filterValue = $(this).attr('data-filter');
-    //         isoGrid.isotope({ filter: filterValue });
-    //     });
-
-    // }());
-
-    //----------------------------------------
     // Scroll
     //----------------------------------------
     $('#to-top').click(function() {
@@ -108,6 +84,15 @@ $(function () {
         $('html, body').animate({
             scrollTop: scrollDistance + 'px'
         }, 500);
+    });
+
+    //----------------------------------------
+    // Contact Me
+    //----------------------------------------
+
+    $( "#gmailButton" ).click(function() {
+        $( "#sendGmail" ).toggle();
+        $("blankSpace-ContactMe").toggle()
     });
 
     //----------------------------------------

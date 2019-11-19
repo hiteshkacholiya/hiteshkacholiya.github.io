@@ -303,7 +303,7 @@ nav li.current a{
     .timeline .timeline-icon {
         position: relative;
         color: #ffffff;
-        left: 48.4%;
+        left: 47.9%;
         margin-left: -6px;
         height: 55px;
         width: 55px;
@@ -341,37 +341,6 @@ nav li.current a{
     opacity: 0.4;
 }
 
-@media (min-width: 600px) {
-    .timeline ul li:nth-child(odd) div.timeline-content {
-        text-align: right;
-    }
-
-        .timeline ul li:nth-child(odd) div.timeline-content:before {
-            content: "";
-            position: absolute;
-            top: 20px;
-            left: 100%;
-            border-top: 16px solid transparent;
-            border-bottom: 16px solid transparent;
-            border-left: 20px solid #ffffff;
-        }
-
-    .timeline ul li:nth-child(even) div.timeline-content {
-        float: right;
-    }
-
-        .timeline ul li:nth-child(even) div.timeline-content:before {
-            content: "";
-            position: absolute;
-            top: 20px;
-            left: -20px;
-            ;
-            border-top: 16px solid transparent;
-            border-bottom: 16px solid transparent;
-            border-right: 20px solid #ffffff;
-        }
-}
-
 .timeline span {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:14px;
@@ -403,6 +372,82 @@ nav li.current a{
 
 .timeline h3 span{
 	color:#ffffff;
+}
+
+@media (min-width: 600px) {
+    .timeline ul li:nth-child(odd) div.timeline-content {
+        text-align: right;
+    }
+
+        .timeline ul li:nth-child(odd) div.timeline-content:before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: 100%;
+            border-top: 16px solid transparent;
+            border-bottom: 16px solid transparent;
+            border-left: 20px solid #ffffff;
+        }
+
+    .timeline ul li:nth-child(even) div.timeline-content {
+        float: right;
+    }
+
+        .timeline ul li:nth-child(even) div.timeline-content:before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: -20px;
+            ;
+            border-top: 16px solid transparent;
+            border-bottom: 16px solid transparent;
+            border-right: 20px solid #ffffff;
+        }
+}
+
+@media (min-width: 1081px) {
+    .timeline .timeline-icon {
+        position: relative;
+        color: #ffffff;
+        left: 48.4%;
+        margin-left: -6px;
+        height: 55px;
+        width: 55px;
+        background-color: #1976D2;
+        background:#1976D2;
+        border-radius: 50%;
+        z-index: 99;
+        /*background-color: #424242;
+        z-index: 50;*/
+    }
+    .timeline ul li:nth-child(odd) div.timeline-content {
+        text-align: right;
+    }
+
+        .timeline ul li:nth-child(odd) div.timeline-content:before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: 100%;
+            border-top: 16px solid transparent;
+            border-bottom: 16px solid transparent;
+            border-left: 20px solid #ffffff;
+        }
+
+    .timeline ul li:nth-child(even) div.timeline-content {
+        float: right;
+    }
+
+        .timeline ul li:nth-child(even) div.timeline-content:before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: -20px;
+            ;
+            border-top: 16px solid transparent;
+            border-bottom: 16px solid transparent;
+            border-right: 20px solid #ffffff;
+        }
 }
 
 /*--------------------------------------
@@ -509,7 +554,7 @@ nav li.current a{
     Certifications
 ----------------------------------------*/
 
-#certs .carousel-item{
+#certifications .carousel-item{
     color:rgba(255, 255, 255, 0.87);
     text-align:center;
     width:250px;
@@ -518,7 +563,7 @@ nav li.current a{
     padding: 30px 10px;
 }
 
-#certs .carousel-item:hover{    
+#certifications .carousel-item:hover{    
     background-color: rgba(25, 118, 210, 1);
 }
 
@@ -533,7 +578,7 @@ nav li.current a{
 
 footer.page-footer 
 {
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 .top{
@@ -546,12 +591,12 @@ footer.page-footer
     margin:15px auto 0 auto;
     width:35px;height:35px;
     border-radius:50%;
-    border:3px solid #337ab7;
+    border:3px solid white;
     text-align:center
 }
 .top i
 {
-    color:#337ab7
+    color:white
 }
 
 .social{text-align:right}
@@ -739,4 +784,15 @@ footer.page-footer
     }
 }
 
+/*--------------------------------------
+    Contact Me
+----------------------------------------*/
 
+.social-contactme-icons li {
+    display: inline-block;
+    padding: 14px;
+}
+
+.social-contactme-icons a i {
+    font-size: 2rem;
+}
