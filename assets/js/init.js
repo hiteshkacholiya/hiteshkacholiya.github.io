@@ -72,14 +72,14 @@ $(function () {
     //----------------------------------------
     // Scroll
     //----------------------------------------
-    $('#to-top').click(function() {
+    $('#to-top').click(function () {
         $('html, body').animate({
             scrollTop: 0
         }, 500);
     });
 
     // Scroll to first element
-    $('#mouse-click-down').click(function() {
+    $('#mouse-click-down').click(function () {
         var scrollDistance = $('#intro').next().offset().top;
         $('html, body').animate({
             scrollTop: scrollDistance + 'px'
@@ -90,14 +90,14 @@ $(function () {
     // Contact Me
     //----------------------------------------
 
-    $( "#gmailButton" ).click(function() {
-        $( "#sendGmail" ).toggle();
-        $( "#sendYahooMail" ).hide();
+    $("#gmailButton").click(function () {
+        $("#sendGmail").toggle();
+        $("#sendYahooMail").hide();
     });
 
-    $( "#yahooButton" ).click(function() {
-        $( "#sendYahooMail" ).toggle();
-        $( "#sendGmail" ).hide();
+    $("#yahooButton").click(function () {
+        $("#sendYahooMail").toggle();
+        $("#sendGmail").hide();
     });
 
     //----------------------------------------
