@@ -26,7 +26,7 @@
 ----------------------------------------*/
 
 #intro {
-    background:white; /*url(../images/intro.jpg) no-repeat center center;*/
+    background:white;
     background-attachment: fixed;
     background-size: cover;
     position: relative;
@@ -45,7 +45,7 @@
 
 .intro-text-container {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
@@ -81,6 +81,18 @@
         left: 0;
         width: 100%;
         height: 100%;
+    }
+    .intro-text-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        background-color: #337ab7;
+        line-height: 1.4285;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 100%;
     }
 }
 .social-icons li {
@@ -135,64 +147,125 @@
 }
 
 .progress-container {
-    width: 100%;
-    height: 8px;
-    background: #ccc;
-    }
-    
-    .progress-bar {
-    height: 8px;
-    background: #3498db;
-    width: 0%;
-    }
+width: 100%;
+height: 8px;
+background: #ccc;
+}
 
-    /* Scroll Right */
-    .scroll-right {
-    height: 50px;	
-    overflow: hidden;
-    position: relative;
-    background: white;
-    color: rgba(51, 122, 183, 1);;
-    border: 1px solid rgba(51, 122, 183, 1);;
-    }
-    .scroll-right p {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    line-height: 50px;
-    text-align: center;
-    /* Starting position */
-    -moz-transform:translateX(-100%);
-    -webkit-transform:translateX(-100%);	
-    transform:translateX(-100%);
-    /* Apply animation to this element */	
-    -moz-animation: scroll-right 15s linear infinite;
-    -webkit-animation: scroll-right 15s linear infinite;
-    animation: scroll-right 15s linear infinite;
-    }
-    /* Move it (define the animation) */
-    @-moz-keyframes scroll-right {
+.progress-bar {
+height: 8px;
+background: #3498db;
+width: 0%;
+}
+
+/* Scroll Right */
+.scroll-right {
+height: 50px;	
+overflow: hidden;
+position: relative;
+background: white;
+color: rgba(51, 122, 183, 1);;
+border: 1px solid rgba(51, 122, 183, 1);;
+}
+.scroll-right p {
+position: absolute;
+width: 100%;
+height: 100%;
+margin: 0;
+line-height: 50px;
+text-align: center;
+/* Starting position */
+-moz-transform:translateX(-100%);
+-webkit-transform:translateX(-100%);	
+transform:translateX(-100%);
+/* Apply animation to this element */	
+-moz-animation: scroll-right 15s linear infinite;
+-webkit-animation: scroll-right 15s linear infinite;
+animation: scroll-right 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-right {
     0%   { -moz-transform: translateX(-100%); }
     100% { -moz-transform: translateX(100%); }
-    }
-    @-webkit-keyframes scroll-right {
+}
+@-webkit-keyframes scroll-right {
     0%   { -webkit-transform: translateX(-100%); }
     100% { -webkit-transform: translateX(100%); }
+}
+@keyframes scroll-right {
+    0%   
+    { 
+        -moz-transform: translateX(-100%); /* Browser bug fix */
+        -webkit-transform: translateX(-100%); /* Browser bug fix */
+        transform: translateX(-100%); 		
     }
-    @keyframes scroll-right {
-    0%   { 
-    -moz-transform: translateX(-100%); /* Browser bug fix */
-    -webkit-transform: translateX(-100%); /* Browser bug fix */
-    transform: translateX(-100%); 		
+    100% 
+    { 
+        -moz-transform: translateX(100%); /* Browser bug fix */
+        -webkit-transform: translateX(100%); /* Browser bug fix */
+        transform: translateX(100%); 
     }
-    100% { 
-    -moz-transform: translateX(100%); /* Browser bug fix */
-    -webkit-transform: translateX(100%); /* Browser bug fix */
-    transform: translateX(100%); 
-    }
-    }
+}
 
+.badge-circle 
+{
+    border-radius: 50%; 
+    margin-right: 10%;
+    /* max-height: 8rem; */
+}
+.badge-circle-text-container {
+    text-align: center;
+    padding-top: 60px;
+    width: 80%;
+    padding-left: 25%;
+    /* line-height: 6rem; */
+}
+
+@media only screen and (max-width: 600px) {
+    .badge-circle 
+    {
+        border-radius: 50%; 
+        margin-right: 5%;
+        max-height: 4rem;
+    }
+    .badge-circle-text-container {
+        text-align: center;
+        padding-top: 20px;
+        width: 90%;
+        padding-left: 10%;
+        /* line-height: 6rem; */
+    }   
+}
+
+@media only screen and (max-width: 1024px) {
+    .badge-circle 
+    {
+        border-radius: 50%; 
+        margin-right: 5%;
+    }
+    .badge-circle-text-container {
+        text-align: center;
+        padding-top: 20px;
+        width: 90%;
+        padding-left: 10%;
+        /* line-height: 6rem; */
+    }   
+}
+@media only screen and (min-width: 1081px) {
+    .badge-circle 
+    {
+        border-radius: 50%; 
+        margin-right: 5%;
+        max-height: 8rem;
+    }
+    .badge-circle-text-container {
+        text-align: center;
+        padding-top: 40px;
+        width: 90%;
+        padding-left: 10%;
+        /* line-height: 6rem; */
+    }   
+}
 
 /*--------------------------------------
     Typed JS Cursor blink animation
