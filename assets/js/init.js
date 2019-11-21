@@ -92,7 +92,12 @@ $(function () {
 
     $( "#gmailButton" ).click(function() {
         $( "#sendGmail" ).toggle();
-        $("blankSpace-ContactMe").toggle()
+        $( "#sendYahooMail" ).hide();
+    });
+
+    $( "#yahooButton" ).click(function() {
+        $( "#sendYahooMail" ).toggle();
+        $( "#sendGmail" ).hide();
     });
 
     //----------------------------------------

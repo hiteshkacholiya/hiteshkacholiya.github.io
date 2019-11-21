@@ -151,7 +151,8 @@
                 <div class="card-panel z-depth-2 center">
                     <div class="row wow fadeIn" data-wow-duration="2s" data-wow-offset="100">
                         <div class="col s12" style="text-align: center;  font-weight: lighter;">
-                            <img class="circle z-depth-1-half" style="max-height: 15rem;" src="assets/images/disp-pic.jpg" />
+                            <img class="circle z-depth-1-half" style="max-height: 15rem;"
+                                src="assets/images/disp-pic.jpg" />
                             <p>I am currently working with Infosys Ltd. in Houston, TX as a Technology Lead.</p>
                             <p>I am an experienced IT professional with over 11 years of industry in delivering
                                 complete solutions using Microsoft Technology Stack - Microsoft
@@ -590,7 +591,6 @@
                 </div>
             </div>
         </div>
-        </div>
     </section>
 
     <!-- Projects -->
@@ -950,7 +950,6 @@
                 </div>
             </div>
         </div>
-        </div>
     </section>
 
     <!-- Education -->
@@ -1066,7 +1065,7 @@
             <table style="width: 100%; padding-bottom:0px; ">
                 <tr>
                     <td>
-                        <div class="container z-depth-2" style="padding-left: 15%;">
+                        <div class="container-contactme z-depth-2" style="padding-left: 15%;">
                             <ul class="social-contactme-icons">
                                 <li>
                                     <h5 style="text-transform:none; font-weight: bold; color: white;">
@@ -1100,12 +1099,19 @@
                                         <i class="fas fa-phone-square-alt"></i>
                                     </a>
                                 </li>
+                                <li>
+                                    <a class="btn btn-floating btn-large tooltipped" id="yahooButton" target="_blank"
+                                        data-tooltip="Yahoo" onclick="sendYahooMail()">
+                                        <i class="fab fa-yahoo"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </td>
                 </tr>
             </table>
             </br>
+            <!-- Gmail -->
             <div id="sendGmail" hidden style="padding-left: 15%;">
                 <form method="POST" name="sendEmail" action="https://formspree.io/mbjjqneo">
                     <table style="line-height: normal; width: 80%;">
@@ -1138,6 +1144,45 @@
                     <div style="text-align: center;">
                         <input type="button" class="btn-rounded-white" style="background-color: transparent;"
                             value="Send" onclick="submitForm()">
+                        <input type="reset" class="btn-rounded-white" style="background-color: transparent;"
+                            value="Reset">
+                    </div>
+                </form>
+                </br>
+            </div>
+            <!-- Yahoo Mail-->
+            <div id="sendYahooMail" hidden style="padding-left: 15%;">
+                <form method="POST" name="sendEmail" action="https://formspree.io/myyyaknq">
+                    <table style="line-height: normal; width: 80%;">
+                        <tr style="width: 100%;">
+                            <td style="width: 20%; text-align: left;">
+                                Your Name:
+                            </td>
+                            <td>
+                                <input type="text" style="text-align: left;" name="name">
+                            </td>
+                        </tr>
+                        <tr style="width: 100%;">
+                            <td style="width: 20%; text-align: left; padding-right: 5px;">
+                                Your Email:
+                            </td>
+                            <td>
+                                <input type="text" style="text-align: left;" name="mail">
+                            </td>
+                        </tr>
+                        <tr style="width: 100%;text-align: right;">
+                            <td style="width: 20%; text-align: left; padding-right: 5px;">
+                                Message:
+                            </td>
+                            <td>
+                                <input type="text" class="w3-input w3-border" style="text-align: left; " name="comment"
+                                    size="50">
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="text-align: center;">
+                        <input type="button" class="btn-rounded-white" style="background-color: transparent;"
+                            value="Send" onclick="submitYahooForm()">
                         <input type="reset" class="btn-rounded-white" style="background-color: transparent;"
                             value="Reset">
                     </div>
@@ -1192,6 +1237,15 @@
             frm.submit(); // Submit the form
             frm.reset();  // Reset all form data
             document.gsetElementById("sendGmail").style.visibility = "hidden";
+            return false; // Prevent page refresh
+        }
+
+        //Submit the form for sending email to gmail account
+        function submitYahooForm() {
+            var frm = document.getElementsByName('sendYahooMail')[0];
+            frm.submit(); // Submit the form
+            frm.reset();  // Reset all form data
+            document.gsetElementById("sendYahooMail").style.visibility = "hidden";
             return false; // Prevent page refresh
         }
     </script>

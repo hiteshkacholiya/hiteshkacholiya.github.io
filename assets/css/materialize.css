@@ -5081,6 +5081,19 @@ nav ul a span.badge {
     width: 99%; } 
   }
 
+.container-contactme {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 99%; }
+
+@media only screen and (min-width: 601px) {
+  .container-contactme {
+    width: 99%; } }
+
+@media only screen and (min-width: 993px) {
+  .container-contactme {
+    width: 99%; } }
+
 .container .row {
   margin-left: -0.75rem;
   margin-right: -0.75rem; }
