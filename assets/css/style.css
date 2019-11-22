@@ -84,7 +84,7 @@
     }
     .intro-text-container {
         position: absolute;
-        top: 50%;
+        top: 45%;
         left: 50%;
         text-align: center;
         transform: translate(-50%, -50%);
@@ -97,18 +97,18 @@
 }
 .social-icons li {
     display: inline-block;
-    padding: 4px;
+    padding: 1px;
 }
 
 .social-icons a i {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 900px)
 {
     .social-icons li {
         display: inline-block;
-        padding: 2px;
+        padding: 1px;
     }
     
     .social-icons a i {
@@ -132,8 +132,8 @@
 /* Mouse icon in Intro area */
 .mouse-icon {
     position: absolute;
-    left: 50%;
-    bottom: 40px;
+    left: 95%;
+    bottom: 5%;
     border: 2px solid rgba(255, 255, 255, 0.87);
     border-radius: 16px;
     height: 50px;
@@ -160,12 +160,12 @@
 
 .progress-container {
 width: 100%;
-height: 8px;
+height: 6px;
 background: #ccc;
 }
 
 .progress-bar {
-height: 8px;
+height: 6px;
 background: #3498db;
 width: 0%;
 }
@@ -227,7 +227,7 @@ animation: scroll-right 15s linear infinite;
 }
 .badge-circle-text-container {
     text-align: center;
-    padding-top: 60px;
+    padding-top: 10px;
     width: 99%;
     padding-left: 8%;
     line-height: 6rem;
@@ -237,33 +237,33 @@ animation: scroll-right 15s linear infinite;
     .badge-circle 
     {
         border-radius: 50%; 
-        margin-right: 5%;
+        margin-right: 2%;
         max-height: 4rem;
     }
     .badge-circle-text-container {
-        text-align: center;
-        padding-top: 20px;
-        width: 90%;
-        padding-left: 10%;
+        padding-top: 10px;
+        width: 99%;
+        padding-left: 2%;
         /* line-height: 6rem; */
     }   
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
     .badge-circle 
     {
         border-radius: 50%; 
-        margin-right: 5%;
+        margin-right: 3%;
+        max-height: 6rem;
     }
     .badge-circle-text-container {
         text-align: center;
-        padding-top: 20px;
-        width: 90%;
-        padding-left: 10%;
+        padding-top: 10px;
+        width: 99%;
+        padding-left: 5%;
         /* line-height: 6rem; */
     }   
 }
-@media only screen and (min-width: 1081px) and (max-width: 1280px) {
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
     .badge-circle 
     {
         border-radius: 50%; 

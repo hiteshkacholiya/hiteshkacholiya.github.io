@@ -5844,6 +5844,13 @@ h1 {
   line-height: 110%;
   margin: 2.1rem 0 1.68rem 0; }
 
+@media only screen and (max-width: 600) {
+  h1 {
+    font-size: 3.8rem;
+    line-height: 110%;
+    margin: 2.1rem 0 1.68rem 0; } 
+  }
+
 h2 {
   font-size: 3.56rem;
   line-height: 110%;
