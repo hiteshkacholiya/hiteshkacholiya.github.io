@@ -222,7 +222,7 @@ animation: scroll-right 15s linear infinite;
 .badge-circle 
 {
     border-radius: 50%; 
-    margin-right: 10%;
+    margin-right: 5%;
     max-height: 8rem;
 }
 .badge-circle-text-container {
