@@ -5300,6 +5300,9 @@ nav ul a span.badge {
         margin-left: auto;
         left: auto;
         right: auto; }
+      .row .col.m6-aboutme {
+        margin-left: auto;
+        align-items: center; } 
       .row .col.m7 {
         width: 58.33333%;
         margin-left: auto;
