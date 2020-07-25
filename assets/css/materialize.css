@@ -5710,11 +5710,11 @@ nav {
     white-space: nowrap; }
     nav .brand-logo.center {
       left: 50%;
-      transform: translateX(-50%); }
+      transform: translateX(-90%); }
     @media only screen and (max-width: 992px) {
       nav .brand-logo {
         left: 50%;
-        transform: translateX(-50%); }
+        transform: translateX(-90%); }
         nav .brand-logo.left, nav .brand-logo.right {
           padding: 0;
           transform: none; }
@@ -5827,7 +5827,7 @@ html {
       font-size: 14px; } }
   @media only screen and (min-width: 992px) {
     html {
-      font-size: 14px; } }
+      font-size: 12px; } }
   @media only screen and (min-width: 1200px) {
     html {
       font-size: 14px; } }
