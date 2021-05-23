@@ -31,7 +31,7 @@ $(function () {
 
     //Typing skill Hashtags - using Typed.js
     (function () {
-        var keySkills = ["Cloud", "Design", "Architect", "Code", "Engineer", "Automate", "Transform"];
+        var keySkills = ["Microsoft Azure", "Amazon Web Services", "Cloud Solutions", "Design", "Architecture", "Code", "Automation", "Modernization & Transformation", "IAC", "APIs & Microservices"];
 
         $(".typing-area").typed({
             strings: keySkills,
